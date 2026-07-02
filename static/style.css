@@ -1,0 +1,113 @@
+body{
+
+    margin:0;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#eef2f7;
+
+}
+
+.container{
+
+    width:60%;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    box-shadow:0px 0px 15px rgba(0,0,0,.2);
+
+}
+
+h1{
+
+    color:#1a237e;
+
+}
+
+.subtitle{
+
+    color:gray;
+
+    margin-bottom:25px;
+
+}
+
+input{
+
+    margin:15px;
+
+}
+
+button{
+
+    background:#1a237e;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+button:hover{
+
+    background:#3949ab;
+
+}
+
+.results{
+
+    margin-top:30px;
+
+}
+
+.card{
+
+    background:#f5f5f5;
+
+    padding:20px;
+
+    margin:15px;
+
+    border-radius:10px;
+
+}
+
+.card p{
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+.fraud{
+
+    background:#ffebee;
+
+    color:#c62828;
+
+}
+
+.legit{
+
+    background:#e8f5e9;
+
+    color:#2e7d32;
+
+}

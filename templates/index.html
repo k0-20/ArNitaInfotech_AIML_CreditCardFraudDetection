@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Credit Card Fraud Detection</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>💳 Credit Card Fraud Detection</h1>
+
+    <p class="subtitle">
+        Upload a CSV file to detect fraudulent transactions.
+    </p>
+
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+
+        <input type="file" name="file" required>
+
+        <br><br>
+
+        <button type="submit">
+            Predict
+        </button>
+
+    </form>
+
+    {% if total %}
+
+    <div class="results">
+
+        <h2>Prediction Results</h2>
+
+        <div class="card">
+
+            <h3>Total Transactions</h3>
+
+            <p>{{ total }}</p>
+
+        </div>
+
+        <div class="card fraud">
+
+            <h3>Fraud Transactions</h3>
+
+            <p>{{ fraud }}</p>
+
+        </div>
+
+        <div class="card legit">
+
+            <h3>Legitimate Transactions</h3>
+
+            <p>{{ legitimate }}</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Fraud Percentage</h3>
+
+            <p>{{ percentage }}%</p>
+
+        </div>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+
+</html>
